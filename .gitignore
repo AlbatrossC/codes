@@ -2,4 +2,5 @@
 .vscode/
 
 #Aim is to provide no css to this branch
+*.css
 static/css/
