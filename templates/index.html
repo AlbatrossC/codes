@@ -82,35 +82,5 @@
             </div>
     </main>
 </div>
-
-<!-- Modal Structure -->
-<div id="stats-modal" class="modal hidden">
-    <div class="modal-content">
-        <span id="close-modal" class="close-button">&times;</span>
-        <script src="https://static.elfsight.com/platform/platform.js" async></script>
-        <div class="elfsight-app-b95e0d8e-80e3-4ee9-aa4d-e71355b1d378" data-elfsight-app-lazy></div>
-    </div>
-</div>
-
-<script>
-    // Modal toggle logic
-    const menuStats = document.getElementById('menu-stats');
-    const statsModal = document.getElementById('stats-modal');
-    const closeModal = document.getElementById('close-modal');
-
-    menuStats.addEventListener('click', () => {
-        statsModal.classList.remove('hidden');
-    });
-
-    closeModal.addEventListener('click', () => {
-        statsModal.classList.add('hidden');
-    });
-
-    window.addEventListener('click', (event) => {
-        if (event.target === statsModal) {
-            statsModal.classList.add('hidden');
-        }
-    });
-</script>
 </body>
 </html>
